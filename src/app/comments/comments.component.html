@@ -1,0 +1,14 @@
+<div *ngIf="comments.length > 0; else noComments">
+  <h2>Comments</h2>
+  <div class="comments-container">
+    <div class="comment-card" *ngFor="let comment of comments">
+      <h3>{{ comment.id }} - {{comment.name}}</h3>
+      <p><strong>Email:</strong> {{ comment.email }}</p>
+      <!-- <p><strong>Name:</strong> {{ comment.name }}</p> -->
+    </div>
+  </div>
+</div>
+
+<ng-template #noComments>
+  <p>No comments available.</p>
+</ng-template>

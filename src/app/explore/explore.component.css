@@ -1,0 +1,79 @@
+/* Container for the cards */
+.cards-container {
+  display: flex;
+  margin-top: 4%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 150px;
+  background-color:  rgb(115, 11, 11);
+}
+
+/* Individual card styling */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card header styling */
+.card h3 {
+  font-size: 1.5em;
+  color:  rgb(115, 11, 11);
+}
+
+/* Card content styling */
+.card p {
+  font-size: 1em;
+  color:  rgb(115, 11, 11);
+}
+
+/* Pagination container styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}
+
+/* Pagination button styling */
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color:  rgb(115, 11, 11);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+/* Pagination button hover effect */
+.pagination button:hover {
+  background-color:  rgb(95, 7, 7);
+}
+
+/* Disabled pagination button styling */
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Pagination text styling */
+.pagination span {
+  font-size: 1em;
+  color: #333;
+  margin: 0 10px;
+}

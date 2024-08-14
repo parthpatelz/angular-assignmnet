@@ -1,0 +1,78 @@
+/* Header Styles */
+.header {
+  background-color: #10151e; /* Dark red background */
+  color: rgb(125, 81, 135); /* Text color */
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header h1, .header p {
+  margin: 0;
+  color: rgb(44, 23, 44); /* Ensure consistency with text color */
+}
+
+/* Container for header content */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(198, 194, 203); /* Contrast color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.logo:hover {
+  color: #9293a1; /* Change logo color on hover */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Navigation Link Items */
+.nav-links li {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+/* Navigation Links */
+.nav-links a {
+  color:rgb(198, 194, 203);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects for Navigation Links */
+.nav-links a:hover {
+  background-color: #3a0f2c; /* Darker background on hover */
+  color: rgb(198, 194, 203); /* Light color on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

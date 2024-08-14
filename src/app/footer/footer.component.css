@@ -1,0 +1,26 @@
+/* Footer Styles */
+.footer {
+  background-color: #1a202c; /* Dark background color */
+  color: #f7fafc; /* Light text color for contrast */
+  padding: 1rem 0; /* Vertical padding */
+  text-align: center; /* Center align text */
+  position: relative; /* Position relative for layout adjustments */
+  width: 100%; /* Full width */
+  border-top: 1px solid #2d3748; /* Subtle border for separation */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Set font size */
+  font-weight: 400; /* Normal font weight */
+}
+
+.footer a {
+  color: #f7fafc; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer a:hover {
+  color: #a0aec0; /* Lighter color on hover */
+}

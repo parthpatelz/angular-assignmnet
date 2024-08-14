@@ -1,0 +1,40 @@
+<div class="trip-planner-container">
+    <h2>Welcome to German auto garage</h2>
+    <form (ngSubmit)="onSubmit(tripPlannerForm)" #tripPlannerForm="ngForm">
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" ngModel required>
+      </div>
+
+      <div class="form-group">
+        <label for="travelDates">Travel Dates:</label>
+        <input type="date" id="startDate" name="startDate" ngModel required>
+        <input type="date" id="endDate" name="endDate" ngModel required>
+      </div>
+
+      <div class="form-group">
+        <label for="numberOfTravelers">Number of Travelers:</label>
+        <input type="number" id="numberOfTravelers" name="numberOfTravelers" ngModel required min="1">
+      </div>
+
+      <div class="form-group">
+        <label>Accommodation Preferences:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="accommodationPreferences" value="Racing" ngModel> Racing</label>
+          <label><input type="checkbox" name="accommodationPreferences" value="Service" ngModel> Service</label>
+          <label><input type="checkbox" name="accommodationPreferences" value="Oil" ngModel> Oil</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Options:</label>
+        <select name="Options" ngModel multiple>
+          <option value="Masrati">Masrati</option>
+          <option value="Porsche">Porsche</option>
+          <option value="Remac">Remac</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>

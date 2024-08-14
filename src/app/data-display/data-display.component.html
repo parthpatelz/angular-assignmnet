@@ -1,0 +1,21 @@
+<div *ngIf="data.length > 0; else noData">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Thumbnail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.title }}</td>
+        <td><img [src]="item.thumbnailUrl" alt="{{ item.title }}" width="100"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ng-template #noData>
+  <p>No data available.</p>
+</ng-template>

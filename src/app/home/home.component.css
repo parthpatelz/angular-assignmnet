@@ -1,0 +1,94 @@
+/* Animation Library */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+/* General Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a202c;
+  color: #f7fafc;
+  overflow-x: hidden;
+}
+
+/* Image Container Style */
+.image-container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0; /* Start invisible for animation */
+}
+
+/* Button Styles */
+.btn {
+  background-color:rgb(255, 255, 255);
+  color: #5f3467;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: rgb(21, 10, 36);
+  transform: translateY(-2px);
+}
+
+/* Section Content Styles */
+.section-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-item {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
